@@ -1,0 +1,70 @@
+{
+  "name": "cloudboost",
+  "version": "1.1.240",
+  "description": "Database Service that does Storage, Search, Real-time and a whole lot more.",
+  "main": "lib/cloudboost",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "keywords": [
+    "database as a service",
+    "dbaas",
+    "no-sql",
+    "database"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "hello@cloudboost.io"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-bump": "^0.3.1",
+    "grunt-bumpup": "^0.6.3",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-release": "^0.13.0",
+    "mocha": "^2.4.5",
+    "node-localstorage": "^0.5.0",
+    "request": "*",
+    "socket.io-client": "^1.3.5",
+    "xmlhttprequest": "^1.7.0"
+  },
+  "gitHead": "d9202a9ed2480b54be4fe3738432a1f4cb0299a7",
+  "_id": "cloudboost@1.1.240",
+  "_shasum": "e70dc785a9ee75eacb85da7f2b240be1568b43ab",
+  "_from": "cloudboost@>=1.1.236 <2.0.0",
+  "_npmVersion": "3.7.2",
+  "_nodeVersion": "5.0.0",
+  "_npmUser": {
+    "name": "nawazdhandala",
+    "email": "nawazdhandala@outlook.com"
+  },
+  "dist": {
+    "shasum": "e70dc785a9ee75eacb85da7f2b240be1568b43ab",
+    "tarball": "http://registry.npmjs.org/cloudboost/-/cloudboost-1.1.240.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "cloudboost",
+      "email": "hello@cloudboost.io"
+    },
+    {
+      "name": "vipul25",
+      "email": "vipul2519@gmail.com"
+    },
+    {
+      "name": "nawazdhandala",
+      "email": "nawazdhandala@outlook.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/cloudboost-1.1.240.tgz_1458928979675_0.989237094996497"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cloudboost/-/cloudboost-1.1.240.tgz"
+}

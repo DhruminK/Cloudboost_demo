@@ -7,9 +7,9 @@
     "classup": "www.js"
   },
   "dependencies": {
-    "express": "^4.13.4",
     "body-parser": "^1.15.0",
-    "cloudboost": "^1.1.236"
+    "cloudboost": "^1.1.240",
+    "express": "^4.13.4"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var CB= require('cloudboost');
+var CB= require('../cloudboost/dist/cloudboost');
 
 router.route('/')
 	.get(function(req ,res)

@@ -27,11 +27,46 @@ router.route('/')
 		var arr = JSON.parse(JSON.stringify(req.body));
 		var CO = new CB.CloudObject("Tutorial");
 		CO.set("name", arr["name"]);
+		if("tagline" in arr)
+		{
+			CO.set("tagline", arr["tagline"]);
+		}
 		CO.set("phone_number", Number(arr["phone_number"]));
+
+
 		CO.save(
 		{
 			success: function(obj){
-				res.send({ message: "Classes Added" });
+				if("list_of_streams" in arr)
+				{
+					var los=arr["list_of_streams"];
+					var CQS = new CB.CloudQuery("Stream");
+					CQS.containedIn("name", los);
+					CQS.find({
+						success: function(list){
+							if(list.length!= 0)
+							{
+								for(var i=0;i<list.length;i++)
+								{
+									var COTS = new CB.CloudObject("TutorialStream");
+									var COS = list[i];
+									COTS.set("tutorial", obj);
+									COTS.set("stream", COS);
+									COTS.save({
+										success: function(obj){},
+										error: function(err){
+											res.send(err);
+										}
+									});
+								}
+
+							}
+						},
+						error: function(err){
+							res.send(err);
+						}
+					});
+				}
 			},
 
 			error: function(err){

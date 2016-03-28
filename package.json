@@ -1,0 +1,28 @@
+{
+  "name": "classup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/www",
+  "bin": {
+    "classup": "www.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "body-parser": "^1.15.0",
+    "cloudboost": "^1.1.236"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DhruminK/WorkRepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DhruminK/WorkRepo/issues"
+  },
+  "homepage": "https://github.com/DhruminK/WorkRepo#readme"
+}
